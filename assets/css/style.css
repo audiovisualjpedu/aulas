@@ -1,0 +1,55 @@
+/* centralize os botões */
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.conteudo {
+  margin-top: -48px;
+  margin-bottom: -50px;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #FF3E30; 
+  color: white; 
+  text-align: center; 
+  padding: 20px;
+  font-weight: 500;
+}
+
+/* Paginas */
+
+.btn_arte {
+  background: #34C3E9;
+}
+
+.btn_geografia {
+  background: #F58A28;
+}
+
+.btn_portugues {
+background: #0D98D3;
+}
+
+.btn_matematica {
+  background: #693684;
+}
+
+.corpo-cartao {
+  padding: 0 !important;
+}
+
+.card {
+  max-height: 150px;
+  cursor: pointer;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+
+  aspect-ratio: 16/9;
+}
+
