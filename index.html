@@ -18,9 +18,9 @@
     <!--Crie o header-->
     <header class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <!-- <a class="navbar-brand" href="#">
                 <i class="fa-brands fa-google" style="color: #ffffff;"></i>
-            </a>
+            </a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,10 +36,11 @@
     </header>
 
     <!--Crie o main-->
-    <main class="container">
+    <main class="container position-relative">
+        <h1 class="main-title position-absolute text-white text-center w-100" style="top: 40%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">Aulas Interativas</h1>
         <div class="row">
-            <div class="col-12">
-                <img src="https://via.placeholder.com/1200x400" class="img-fluid">
+            <div class="col-12 p-0">
+                <img src="./assets/img/Banner.png" class="img-fluid">
             </div>
         </div>
     </main>
@@ -48,16 +49,16 @@
         <div class="container">
 
             <div class="row justify-content-center no-gutters">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <button class="btn btn-lg btn-block bg-success text-white mb-md-0 rounded-0"
-                        data-target="#ed_infantil" data-toggle="tab">Educação Infantil</button>
+                <div class="col-12 col-sm-4 col-lg-3">
+                    <button class="btn btn-lg btn-md btn-block bg-success text-white  rounded-0"
+                        data-target="#ed_infantil" data-toggle="tab">Fundamental I</button>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <button class="btn btn-lg btn-block bg-primary text-white mb-md-0 rounded-0"
+                <!-- <div class="col-12 col-sm-4 col-lg-3">
+                    <button class="btn btn-lg btn-md btn-block bg-primary text-white  rounded-0"
                         data-target="#fund_i" data-toggle="tab">Fundamental I</button>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <button class="btn btn-lg btn-block bg-warning text-white mb-md-0 rounded-0"
+                </div> -->
+                <div class="col-12 col-sm-4 col-lg-3">
+                    <button class="btn btn-lg btn-md btn-block bg-warning text-white  rounded-0"
                         data-target="#fund_ii" data-toggle="tab">Fundamental II</button>
                 </div>
             </div>
@@ -65,27 +66,61 @@
         <div class="row">
             <div class="col-12">
                 <div class="tab-content">
-                    <div id="ed_infantil" class="tab-pane fade show active bg-success text-white">
-                        <div class="row p-3">
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
+                    <div id="ed_infantil" class="tab-pane show active bg-success text-white">
+                        <div class="row p-3 justify-content-center">
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="#">
+                                    <img src="./assets/img/1ano.png" class="rounded-circle img-fluid"
+                                        alt="Imagem 1">
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="#">
+                                    <img src="./assets/img/2ano.png" class="rounded-circle img-fluid"
+                                        alt="Imagem 2">
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="#">
+                                    <img src="./assets/img/3ano.png" class="rounded-circle img-fluid"
+                                        alt="Imagem 3">
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="#">
+                                    <img src="./assets/img/4ano.png" class="rounded-circle img-fluid"
+                                        alt="Imagem 4">
+                                </a>
+                            </div>
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="#">
+                                    <img src="./assets/img/5ano.png" class="rounded-circle img-fluid"
+                                        alt="Imagem 4">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fund_i" class="tab-pane bg-primary text-white">
+                        <div class="row p-3 justify-content-center">
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
                                 <a href="#">
                                     <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
                                         alt="Imagem 1">
                                 </a>
                             </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
                                 <a href="#">
                                     <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
                                         alt="Imagem 2">
                                 </a>
                             </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
                                 <a href="#">
                                     <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
                                         alt="Imagem 3">
                                 </a>
                             </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
                                 <a href="#">
                                     <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
                                         alt="Imagem 4">
@@ -93,57 +128,29 @@
                             </div>
                         </div>
                     </div>
-                    <div id="fund_i" class="tab-pane fade bg-primary text-white">
-                        <div class="row p-3">
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
-                                        alt="Imagem 1">
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
-                                        alt="Imagem 2">
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
-                                        alt="Imagem 3">
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
-                                        alt="Imagem 4">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="fund_ii" class="tab-pane fade bg-warning text-white">
-                        <div class="row p-3">
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
+                    <div id="fund_ii" class="tab-pane bg-warning text-white">
+                        <div class="row p-3 justify-content-center">
+                            <div class="col-4 col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
                                 <a href="fund_2_6_ano.html">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
+                                    <img src="./assets/img/6ano.png" class="rounded-circle img-fluid"
                                         alt="Imagem 1">
                                 </a>
                             </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="fund_2_7_ano.html">
+                                    <img src="./assets/img/7ano.png" class="rounded-circle img-fluid"
                                         alt="Imagem 2">
                                 </a>
                             </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="fund_2_8_ano.html">
+                                    <img src="./assets/img/8ano.png" class="rounded-circle img-fluid"
                                         alt="Imagem 3">
                                 </a>
                             </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center p-3">
-                                <a href="#">
-                                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid"
+                            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-center align-items-center p-3">
+                                <a href="fund_2_9_ano.html">
+                                    <img src="./assets/img/9ano.png" class="rounded-circle img-fluid"
                                         alt="Imagem 4">
                                 </a>
                             </div>

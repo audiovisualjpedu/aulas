@@ -4,6 +4,15 @@
   justify-content: center;
 }
 
+.main-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
 .conteudo {
   margin-top: -48px;
   margin-bottom: -50px;
@@ -22,6 +31,26 @@ footer {
 
 .btn_arte {
   background: #34C3E9;
+}
+
+.btn_historia {
+  background: #f7ca0f;
+}
+
+.btn_ingles {
+  background: #FC5041
+}
+
+.btn_religiao {
+  background: #CC3470;
+}
+
+.btn_fisica {
+  background: #845EFA;
+}
+
+.btn_ciencias {
+  background: #22C074;
 }
 
 .btn_geografia {
@@ -53,3 +82,7 @@ background: #0D98D3;
   aspect-ratio: 16/9;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%px;
+}
