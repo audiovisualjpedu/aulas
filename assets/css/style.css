@@ -12,9 +12,15 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 576px){ 
+  .main-title {
+    font-size: 30px;
+    top: 25% !important;
+  }
+}
 
 .conteudo {
-  margin-top: -48px;
+  margin-top: -55px;
   margin-bottom: -50px;
 }
 
@@ -85,4 +91,37 @@ background: #0D98D3;
 .container {
   max-width: 1200px;
   width: 100%px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent !important;
+  color: #007bff !important;
+}
+
+.btn-label {
+  display: inline-block;
+  width: calc(100% - 15px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-dropdown {
+  padding-right: 30px;
+}
+
+.btn-dropdown .caret {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-menu button {
+  margin-top: 0;
+  margin-bottom: 0;
 }

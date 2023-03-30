@@ -58,41 +58,26 @@
         <div class="container">
 
             <div class="row justify-content-center no-gutters">
-                <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_arte text-white mb-md-0 rounded-0" data-target="#arte"
-                        data-toggle="tab">Arte</button>
-                </div>
-                <!-- <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_ciencias text-white mb-md-0 rounded-0"
-                        data-target="#ciencias" data-toggle="tab">Ciências</button>
-                </div> -->
-                <!-- <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_fisica text-white mb-md-0 rounded-0" data-target="#fisica"
-                        data-toggle="tab">Ed. Física</button>
-                </div> -->
-                <!-- <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_religiao text-white mb-md-0 rounded-0"
-                        data-target="#religiao" data-toggle="tab">Ens. Religioso</button>
-                </div> -->
-                <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_geografia text-white mb-md-0 rounded-0"
-                        data-target="#geografia" data-toggle="tab">Geografia</button>
-                </div>
-                <!-- <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_historia text-white mb-md-0 rounded-0"
-                        data-target="#historia" data-toggle="tab">História</button>
-                </div> -->
-                <!-- <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_ingles text-white mb-md-0 rounded-0" data-target="#ingles"
-                        data-toggle="tab">Língua Inglesa</button>
-                </div> -->
-                <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_portugues text-white mb-md-0 rounded-0"
-                        data-target="#portugues" data-toggle="tab">L. Portuguesa</button>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3">
-                    <button class="btn btn-lg btn-block btn_matematica text-white mb-md-0 rounded-0"
-                        data-target="#matematica" data-toggle="tab">Matemática</button>
+                <div class="btn-group">
+                    <div class="dropdown">
+                        <button class="btn btn-lg dropdown-toggle btn_arte text-white mb-md-0 rounded-0 btn-block"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="btn-label">Arte</span>
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                            <button class="btn btn-lg btn_arte text-white mb-md-0 rounded-0 active btn-block"
+                                data-target="#arte" data-toggle="tab">Arte</button>
+                            <button class="btn btn-lg btn_geografia text-white mb-md-0 rounded-0 btn-block"
+                                data-target="#geografia" data-toggle="tab">Geografia</button>
+                            <button class="btn btn-lg btn_portugues text-white mb-md-0 rounded-0 btn-block"
+                                data-target="#portugues" data-toggle="tab">L. Portuguesa</button>
+                            <button class="btn btn-lg btn_matematica text-white mb-md-0 rounded-0 btn-block"
+                                data-target="#matematica" data-toggle="tab">Matemática</button>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,6 +181,27 @@
                                     </div>
                                 </div>
                             </div>
+                            <div
+                                class="col-md-4 col-sm-4 col-lg-3 d-flex justify-content-center align-items-center p-3">
+                                <div class="card card-clickable" data-toggle="modal" data-target="#myModal"
+                                    data-video="https://drive.google.com/file/d/1Wjb3xlZA7JmXTSovA-T6BJze_hk9tiSi/preview"
+                                    data-title="Gênero Verbete:
+                                    Leitura e análise de fragmentos de texto;
+                                    Conceito do gênero;
+                                    Características do gênero;
+                                    Estrutura do gênero;
+                                  
+                                    "
+                                    data-sequencia="https://docs.google.com/document/d/19xAXduGIgwhlQjzL2DoYjaVQMlX9VXDp/edit"
+                                    data-exercicios="https://drive.google.com/file/d/1Cxp6WhWn-DCuTEn3JW2oJ4Pr355NocfD/view?usp=share_link">
+                                    <img class="card-img-top card-thumbnail" src="./assets/img/6ano/2 Port.png"
+                                        alt="Imagem 1">
+                                    <div class="card-body corpo-cartao">
+                                        <a href="#" class="card-link d-none">Sequência Didática</a>
+                                        <a href="#" class="card-link d-none">Lista de Exercícios</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div id="matematica" class="tab-pane btn_matematica text-white">
@@ -285,7 +291,7 @@
             $('#myModal iframe').attr('src', '');
         });
     </script>
-
+    <script src="./assets/js/dropdown.js"></script>
     <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
